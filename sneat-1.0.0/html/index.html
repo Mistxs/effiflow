@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html
+  lang="ru"
+  class="dark-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>EffiFlow - Инструмент для Сотрудников YCLIENTS</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"/>
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" fill="#4FA8FF" width="24px" height="24px">
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M9 2a7 7 0 0 0-7 7v6a7 7 0 0 0 7 7h6a7 7 0 0 0 7-7v-6a7 7 0 0 0-7-7h-6zm0 2h6a5 5 0 0 1 5 5v6a5 5 0 0 1-5 5h-6a5 5 0 0 1-5-5v-6a5 5 0 0 1 5-5zm1 9h4v2h-4v-2zm0-4h4v2h-4v-2zm-1-6a5 5 0 0 1 5 5h-2a3 3 0 0 0-3-3V3zm0 2v2H9V5h2z"/>
+                </svg>
+              </span>
+              <span class="app-brand-text menu-text fw-bolder ms-2">EffiFlow</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item active">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Сводная</div>
+              </a>
+            </li>
+
+            <!-- Layouts -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-layout"></i>
+                <div data-i18n="Layouts">Справочная</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="layouts-without-menu.html" class="menu-link">
+                    <div data-i18n="Without menu">Как получить ID чего либо?</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-without-navbar.html" class="menu-link">
+                    <div data-i18n="Without navbar">Статьи про ККМ</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-container.html" class="menu-link">
+                    <div data-i18n="Container">Частые SQL запросы</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-fluid.html" class="menu-link">
+                    <div data-i18n="Fluid">Нетипичные кейсы</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">1 Линия</span>
+            </li>
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-layout"></i>
+                <div data-i18n="Layouts">ККМ</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="layouts-without-menu.html" class="menu-link">
+                    <div data-i18n="Without menu">Forse Save Result</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-without-navbar.html" class="menu-link">
+                    <div data-i18n="Without navbar">Разблокировка визитов</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-container.html" class="menu-link">
+                    <div data-i18n="Container">Поиск переплат</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-layout"></i>
+                <div data-i18n="Layouts">Супер-Разделы</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="layouts-without-menu.html" class="menu-link">
+                    <div data-i18n="Without menu">Лояльность</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-without-navbar.html" class="menu-link">
+                    <div data-i18n="Without navbar">Записи за день</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-container.html" class="menu-link">
+                    <div data-i18n="Container">Поиск переплат</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">2 Линия</span>
+            </li>
+
+            <!-- Cards -->
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Сплиттер ФИО</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Пересохранение расписания</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Поиск по трекеру</div>
+              </a>
+            </li>
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Внедрение</span>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Layouts">Салоны</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="layouts-without-menu.html" class="menu-link">
+                    <div data-i18n="Without menu">Обновить информацию</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-without-navbar.html" class="menu-link">
+                    <div data-i18n="Without navbar">Виджеты</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-without-navbar.html" class="menu-link">
+                    <div data-i18n="Without navbar">Визиты</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Layouts">Товары</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="layouts-without-menu.html" class="menu-link">
+                    <div data-i18n="Without menu">Миграция</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-without-navbar.html" class="menu-link">
+                    <div data-i18n="Without navbar">Объединение</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-without-navbar.html" class="menu-link">
+                    <div data-i18n="Without navbar">Технологические карты</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Layouts">Услуги</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="layouts-without-menu.html" class="menu-link">
+                    <div data-i18n="Without menu">Миграция</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-without-navbar.html" class="menu-link">
+                    <div data-i18n="Without navbar">Объединение</div>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a
+                href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
+                target="_blank"
+                class="menu-link"
+              >
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Documentation">Загрузка</div>
+              </a>
+            </li>
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Прочее</span>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="#">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+
+          <!-- / Navbar -->
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="row">
+                <div class="col-lg-8 mb-4 order-0">
+                  <div class="card">
+                    <div class="d-flex align-items-end row">
+                      <div class="col-sm-7">
+                        <div class="card-body">
+                          <h5 class="card-title text-primary">Приветствую тебя, мой дорогой друг! 🎉</h5>
+                          <p class="mb-4">
+                            На главной странице я хочу сделать ссылки на самые популярные разделы,
+                            или накрутить виджеты, только нужно понять, какие виджеты можно в целом придумать, и нужны
+                            ли они вообще.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-5 text-center text-sm-left">
+                        <div class="card-body pb-0 px-0 px-md-4">
+                          <img
+                            src="../assets/img/illustrations/man-with-laptop-light.png"
+                            height="140"
+                            alt="View Badge User"
+                            data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                            data-app-light-img="illustrations/man-with-laptop-light.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4 order-2">
+                  <div class="card">
+                    <div class="d-flex align-items-end row">
+                      <div class="col-sm-7">
+                        <div class="card-body">
+                          <h5 class="card-title text-primary">Рандомный дашборд</h5>
+                          <p class="mb-4">
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md">
+                  <div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img class="card-img card-img-left" src="../assets/img/elements/payment.png" alt="Card image">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Оплата визитов</h5>
+                          <p class="card-text">
+                            В первую очередь я хочу представить в новом виде инструмент для оплаты загруженных визитов.
+                          </p>
+                          <p class="card-text"><small class="text-muted">2023-08-01</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-6">
+
+
+                  <div class="accordion" id="accordionExample">
+                    <div class="card accordion-item active">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionOne" aria-expanded="true" aria-controls="accordionOne">
+                          Кому будет полезен инструмент?
+                        </button>
+                      </h2>
+
+                      <div id="accordionOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Это большая моя полугодовая работа. Некоторые статичные страницы я создам сразу,
+                          далее уже подготовлю шаблон для встраивания в мини-приложения. <br>
+                          Инструмент будет полезен всем, кто хоть немного касается клиентов. <br>
+                          Основной упор на внедрение, 1 линию и 2 линию, так как часто у нас нестандартные кейсы,
+                          которые либо не решаются стандартными инструментами вовсе, либо решаются так,
+                          что <span class="fw-bold">лучше бы не решались</span> 🤪
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionTwo" aria-expanded="false" aria-controls="accordionTwo">
+                          Когда все будет готово?
+                        </button>
+                      </h2>
+                      <div id="accordionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Новые функции будут добавляться постепенно. <br>
+                          Чтобы не теряться сразу в интерфейсе, меню будет наполняться по мере релиза приложений. <br>
+                          В первую очередь я создам пару приложений для внедрения, обкатаю новый шаблон,
+                          а затем буду переносить текущий проект tools4u сюда.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionThree" aria-expanded="false" aria-controls="accordionThree">
+                          Зачем тебе это надо?
+                        </button>
+                      </h2>
+                      <div id="accordionThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Просто хочется сделать мир лучше 🥰 <br>
+                          <span class="text-muted">(а еще набраться опыта практической разработки и уйти в dev)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-2">
+                  <div class="card p-3">
+                    <figure class="p-3 mb-0">
+                      <blockquote class="blockquote">
+                        <p>В новом интерфейсе все кажется сбалансированным</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer mb-0 text-muted">
+                        Дмитрий Редькин <cite title="Source Title">друг подруги</cite>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  <pre>ver.: 0.01a</pre>
+                  По любым вопросам работы приложения пишите сразу в Slack.
+                </div>
+                <div>
+                  <a href="https://b5898dc6e4bc-8806955829454616363.ngrok-free.app/tools4u" class="footer-link me-4" target="_blank">Tools4U</a>
+                  <a href="https://wiki.yandex.ru/product/second-line/tools4u-guide/" target="_blank" class="footer-link me-4">Страница в WIKI</a>
+                  <a href="https://wiki.yandex.ru/product/second-line/tools4u-guide/" target="_blank" class="footer-link me-4">Экстренные контакты</a>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
